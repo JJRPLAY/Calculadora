@@ -52,6 +52,10 @@ if __name__ == "__main__":
             elif operador == '+':
                 resultado = calculadora(num1, num2, operador)
                 print(f'Resultado: {num1} + {num2} = {resultado}\n')
+                
+            elif operador == '*':
+                resultado = calculadora(num1, num2, operador)
+                print(f'Resultado: {num1} * {num2} = {resultado}\n')
                     
         except ValueError:
             print('Dados inválidos! -> Tente novamente!')
