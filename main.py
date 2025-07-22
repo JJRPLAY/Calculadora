@@ -40,21 +40,14 @@ if __name__ == "__main__":
             
             num1 = float(input('Digite o primeiro número: '))
             num2 = float(input('Digite o segundo número: '))
-            operando = input('Digite o operador (+, -, *, /): ')
+            operador = input('Digite o operador (+, -, *, /): ')
             
-            if operando not in ['+', '-', '*', '/']:
-                raise ValueError('NaN Operador inválido!')
+            if operador not in ['+', '-', '*', '/']:
+                calculadora(num1, num2, operador)
             
-            else:
-                if operando == '+':
-                    calculadora (num1, num2, operador = '+')
-                    print(f"resultado e ")
-                elif operando == '-':
-                    calculadora (num1, num2, operando = '-')
-                elif operando == '*':
-                    calculadora (num1, num2, operando = '*')
-                elif operando == '/':
-                    calculadora (num1, num2, operando = '/')
+            elif operador == '-':
+                resultado = calculadora(num1, num2, operador)
+                print(f'{num1} - {num2} = {resultado}\n')
                     
         except ValueError:
             print('Dados inválidos! -> Tente novamente!')
