@@ -42,21 +42,10 @@ if __name__ == "__main__":
             num2 = float(input('Digite o segundo número: '))
             operador = input('Digite o operador (+, -, *, /): ')
             
-            if operador not in ['+', '-', '*', '/']:
-                calculadora(num1, num2, operador)
+          
+            resultado = calculadora(num1, num2, operador)
+            print(f'Resultado: {num1} / {num2} = {resultado}\n')
             
-            elif operador == '-':
-                resultado = calculadora(num1, num2, operador)
-                print(f'{num1} - {num2} = {resultado}\n')
-                
-            elif operador == '+':
-                resultado = calculadora(num1, num2, operador)
-                print(f'Resultado: {num1} + {num2} = {resultado}\n')
-                
-            elif operador == '*':
-                resultado = calculadora(num1, num2, operador)
-                print(f'Resultado: {num1} * {num2} = {resultado}\n')
-                    
         except ValueError:
             print('Dados inválidos! -> Tente novamente!')
             time.sleep(2)
