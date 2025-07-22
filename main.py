@@ -27,7 +27,6 @@ def calculadora(num1: float, num2: float, operador: str) -> float:
 
 
 if __name__ == "__main__":
-
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
         try:
@@ -60,5 +59,9 @@ if __name__ == "__main__":
         except ZeroDivisionError:
             print('Impossível dividir por zero! -> Tente novamente!')
             time.sleep(2) 
-    #else:
-        #print('\nVolte sempre!\n')
+            
+        continuar = input("Deseja usar a calculadora novamente? (s/n): ").lower()
+        if continuar != 's':
+            print("Obrigado por Testar!")
+            print('\nVolte sempre!\n')
+            break
