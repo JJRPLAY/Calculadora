@@ -33,6 +33,10 @@ if __name__ == "__main__":
             print('Calculadora')
             print('----------------------------------\n')
             
+            num1 = float ('nan')
+            num2 = float ('nan')
+            resultado = float('nan')
+            operador = ('nan')
             
             num1 = float(input('Digite o primeiro número: '))
             num2 = float(input('Digite o segundo número: '))
